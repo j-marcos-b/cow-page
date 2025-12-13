@@ -70,10 +70,37 @@ body {
     margin-bottom: var(--spacing-xl);
 }
 
-.welcome-section h1 {
+.welcome-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.welcome-title h1 {
     font-size: var(--font-size-3xl);
-    margin-bottom: var(--spacing-md);
+    margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+}
+
+.welcome-title .logo-img:first-child {
+    width: 220px;
+}
+
+@media (min-width: 768px) {
+    .welcome-title {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .welcome-title h1 {
+        margin: 0 var(--spacing-md);
+    }
 }
 
 .welcome-section p {
@@ -411,5 +438,9 @@ footer {
 
     .reviews-grid {
         grid-template-columns: 1fr;
+    }
+
+    .welcome-title .logo-img:nth-child(3) {
+        display: none;
     }
 }
