@@ -84,12 +84,8 @@ body {
 }
 
 .logo-img {
-    width: 100px;
-    height: auto;
-}
-
-.welcome-title .logo-img:first-child {
     width: 220px;
+    height: auto;
 }
 
 @media (min-width: 768px) {
