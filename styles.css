@@ -84,8 +84,9 @@ body {
 }
 
 .logo-img {
-    width: 300px;
+    width: 200px;
     height: auto;
+    margin: 0 40px 0 40px;
 }
 
 @media (min-width: 768px) {
