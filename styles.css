@@ -223,7 +223,7 @@ h2 {
     color: var(--color-primary);
 }
 
-.features {
+.additional-features {
     background: var(--color-bg-light);
     padding: 25px;
     border-radius: var(--radius-md);
@@ -231,24 +231,24 @@ h2 {
     border-left: 5px solid var(--color-secondary);
 }
 
-.features h3 {
+.additional-features h3 {
     color: var(--color-primary);
     margin-bottom: var(--spacing-sm);
     font-size: var(--font-size-xl);
 }
 
-.features ul {
+.additional-features ul {
     list-style: none;
     padding-left: 0;
 }
 
-.features li {
+.additional-features li {
     padding: var(--spacing-xs) 0;
     padding-left: 25px;
     position: relative;
 }
 
-.features li:before {
+.additional-features li:before {
     content: "💛";
     position: absolute;
     left: 0;
@@ -256,7 +256,7 @@ h2 {
 
 .cta-button {
     display: block;
-    margin: 100px auto 0;
+    margin: 20px auto 0;
     background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
     color: var(--color-bg-white);
     padding: var(--spacing-md) var(--spacing-xxl);
@@ -273,6 +273,11 @@ h2 {
 .cta-button:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-primary-hover);
+}
+
+.cta-section {
+    text-align: center;
+    margin: var(--spacing-lg) 0;
 }
 
 .gallery {
