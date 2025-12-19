@@ -56,14 +56,20 @@
 }
 
 body {
-    font-family: var(--font-family-primary);
-    background: #f1fdfd;
-    color: var(--color-text-dark);
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-image: url('images/fondo.png');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+    color: #333;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: var(--spacing-xl) var(--spacing-md);
 }
@@ -141,7 +147,8 @@ h2 {
 }
 
 .view-button {
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     padding: 12px;
     background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
     color: var(--color-bg-white);
@@ -163,6 +170,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
 .book-info h3 {
@@ -213,7 +221,7 @@ h2 {
 .cta-button {
     display: block;
     margin: 20px auto 0;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    background: linear-gradient(135deg, #A63754, #F25E6B);
     color: var(--color-bg-white);
     padding: var(--spacing-md) var(--spacing-xxl);
     text-decoration: none;
@@ -232,9 +240,12 @@ h2 {
 }
 
 .cta-section {
-    text-align: center;
-    margin: var(--spacing-lg) 0;
+    grid-column: 1 / -1;  
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
+
 
 .gallery {
     background: var(--color-bg-white);
@@ -275,11 +286,33 @@ h2 {
     object-position: 0% 0%;
 }
 
+.gallery-item:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .gallery-item:nth-child(2) img {
     width: 120%;
     margin-left: -10%;
     object-position: 100% 0%;
 }
+
+.gallery-item:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-item:nth-child(3) img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    transform: scale(1.5);
+}
+
 
 /* Modal */
 .modal {
@@ -368,6 +401,9 @@ footer {
     color: var(--color-bg-white);
     padding: var(--spacing-lg) 0;
     text-align: center;
+    margin: 0 auto;
+    max-width: 960px;
+    border-radius: var(--radius-xl);
 }
 
 .footer-content p {
