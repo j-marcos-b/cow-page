@@ -412,9 +412,16 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: var(--spacing-sm);
+    }
+
     .main-content {
         grid-template-columns: 1fr;
-        padding: var(--spacing-lg);
+        width: 100%;
+        padding: var(--spacing-md);
+        margin: 0;
     }
 
     h1 {
@@ -425,8 +432,24 @@ footer {
         font-size: 1em;
     }
 
+    .view-button {
+        width: 100%;
+        padding: 15px;
+        min-height: 44px;
+        font-size: 1.1em;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px 30px;
+        min-height: 44px;
+        font-size: 1.1em;
+    }
+
     .gallery-grid {
         grid-template-columns: 1fr;
+        width: 100%;
     }
 
     .gallery-item img {
@@ -456,5 +479,14 @@ footer {
 
     .welcome-title .logo-img:nth-child(3) {
         display: none;
+    }
+
+    .additional-features {
+        padding: 15px;
+    }
+
+    .gallery,
+    .reviews {
+        padding: var(--spacing-md);
     }
 }
